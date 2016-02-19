@@ -8,8 +8,8 @@
           <header class="post-header">
             <ul class="post-meta-list">
               <li class="post-meta-item">
-                <time datetime="{{date published_at format="YYYY-MM-DD"}}" itemprop="datePublished">
-                  {{date published_at timeago="true"}}
+                <time datetime="{{date published_at format="YYYY-MM-DD HH:mm"}}" itemprop="datePublished">
+                  {{date published_at format="MMMM DD, YYYY [at] HH:mm"}}
                 </time>
               </li>
               {{#if tags}}
@@ -69,7 +69,7 @@
                 {{/if}}
                 <p class="post-info">
                   <b class="post-info-title">Published on</b>
-                  <time class="post-date">{{date format='MMMM DD, YYYY'}}</time>
+                  <time class="post-date">{{date format='MMMM DD, YYYY [at] HH:mm'}}</time>
                 </p>
               </div>
             </div>
