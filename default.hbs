@@ -107,7 +107,7 @@
         var $date = $(date);
         $date.html(
           moment($date.attr('datetime'))
-            .tz('Asia/Jakarta')
+		    .add(12, 'h')
             .format('MMMM DD, YYYY [at] HH:mm')
           );
         });
