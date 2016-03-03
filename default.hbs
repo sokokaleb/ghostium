@@ -104,13 +104,12 @@
 
       $(document).ready(function () {
         $('time').each(function (i, date) {
-      	var $date = $(date); 
-      
-      	$date.html(
-      	  moment($date.attr('datetime'))
-      		.tz('Asia/Jakarta')
-      		.format('MMMM DD, YYYY [at] HH:mm')
-      	  );
+        var $date = $(date);
+        $date.html(
+          moment($date.attr('datetime'))
+            .tz('Asia/Jakarta')
+            .format('MMMM DD, YYYY [at] HH:mm')
+          );
         });
       });
     </script>
