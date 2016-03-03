@@ -143,6 +143,18 @@
         (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
         }());
       }
+
+      $(document).ready(function () {
+        $('.post-date').each(function (i, date) {
+      	var $date = $(date); 
+      
+      	$date.html(
+      	  moment($date.attr('datetime'))
+      		.tz('Asia/Jakarta')
+      		.format('MMMM DD, YYYY [at] HH:mm')
+      	  );
+        });
+      });
     </script>
   </body>
 </html>
